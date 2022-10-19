@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+       <LinearLayout
+           android:id="@+id/first"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:src="@drawable/ic_baseline_location_city_24"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/landmark"
+               android:fontFamily="@font/urbanistbold"
+               android:text="Landmark"
+               android:textStyle="bold"
+               android:textSize="25sp"
+               android:textColor="#000"
+               android:layout_marginLeft="10dp"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/first">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_baseline_location_on_24"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:text="Location"
+                android:fontFamily="@font/urbanistregular"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/personnel"
+            android:text="Personnel"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/plateNumber"
+            android:text="Plate Number"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/personnel"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/companyName"
+            android:text="Plate Number"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/personnel"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/phoneNumber"
+            android:text="Plate Number"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/personnel"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/vehicleType"
+            android:text="Plate Number"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/personnel"
+            android:layout_marginLeft="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp">
+
+            <Button
+                android:id="@+id/btnCall4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/black"
+                android:text="call"
+                android:textSize="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:backgroundTint="@color/gold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="info"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

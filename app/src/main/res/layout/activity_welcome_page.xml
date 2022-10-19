@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFFEB"
+    tools:context=".WelcomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/findHelp"
+            android:layout_width="156dp"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circle"
+            android:padding="50dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ambulance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/urbanistbold"
+            android:text="FIND HELP"
+            android:textAlignment="center"
+            android:textColor="@color/darkRed"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/viewFavourites"
+            android:layout_width="156dp"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ycircle"
+            android:padding="50dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/urbanistbold"
+            android:text="FAVOURITES"
+            android:textAlignment="center"
+            android:textColor="@color/darkGold"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

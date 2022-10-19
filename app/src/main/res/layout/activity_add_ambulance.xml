@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddAmbulance">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--text view for heading-->
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/urbanistbold"
+                android:text="Hello!"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textD"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTVHeader"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/urbanistregular"
+                android:text="Add, View and Update Ambulance Details!"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ngcompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVHeader"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/search_bar"
+                android:hint="Hospital Name"
+                android:minHeight="48dp"
+                android:paddingLeft="25dp" />
+
+            <EditText
+                android:id="@+id/nglandmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ngcompanyName"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/search_bar"
+                android:hint="Landmark"
+                android:minHeight="48dp"
+                android:paddingLeft="25dp" />
+
+            <EditText
+                android:id="@+id/nglocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nglandmark"
+                android:layout_marginTop="10dp"
+                android:hint="Location"
+                android:background="@drawable/search_bar"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="25dp"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/ngpersonnel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nglocation"
+                android:background="@drawable/search_bar"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="25dp"
+                android:minHeight="48dp"
+                android:layout_marginTop="10dp"
+                android:hint="Personnel"
+
+                />
+
+            <EditText
+                android:id="@+id/ngphoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ngpersonnel"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_bar"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="25dp"
+                android:minHeight="48dp"
+                android:hint="Phone Number"
+                />
+
+            <EditText
+                android:id="@+id/ngplateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ngphoneNumber"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/search_bar"
+                android:hint="Plate Number"
+                android:minHeight="48dp"
+                android:paddingLeft="25dp" />
+
+            <EditText
+                android:id="@+id/ngvehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ngplateNumber"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_bar"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="25dp"
+                android:minHeight="48dp"
+                android:hint="Vehicle Type"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/addAmb"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/ngvehicleType"
+                android:backgroundTint="@color/black"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="add new ambulance" />
+
+            <Button
+                android:id="@+id/viewAmb"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/addAmb"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/grey"
+                android:gravity="center"
+                android:text="View Ambulances" />
+
+            <Button
+                android:id="@+id/backHome"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/viewAmb"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/gold2"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Back Home" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
