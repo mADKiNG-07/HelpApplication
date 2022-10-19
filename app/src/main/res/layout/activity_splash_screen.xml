@@ -26,7 +26,7 @@
             android:layout_below="@+id/image"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/urbanistbold"
-            android:text="Ambulance Helper App"
+            android:text="Ambulance Mobile App"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30dp"

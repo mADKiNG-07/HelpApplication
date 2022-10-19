@@ -175,7 +175,7 @@
                     android:textSize="23sp" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/second"
                     android:layout_gravity="center"
@@ -184,22 +184,22 @@
 
                     <Button
                         android:id="@+id/btnCall"
-                        android:layout_width="wrap_content"
+                        android:layout_width="180dp"
                         android:layout_height="match_parent"
                         android:backgroundTint="@color/green"
                         android:text="Call"
-                        android:drawableTop="@drawable/ic_baseline_call_24"
+                        android:drawableLeft="@drawable/ic_baseline_call_24"
                         android:textColor="@color/black"
                         android:layout_marginRight="10dp"
                         android:textSize="10dp" />
 
                     <Button
                         android:id="@+id/btnFav"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:backgroundTint="@color/blue"
-                        android:drawableTop="@drawable/ic_baseline_star_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:backgroundTint="@color/gold"
+                        android:drawableLeft="@drawable/ic_baseline_star_24"
                         android:text="Favourite"
                         android:textColor="@color/black"
                         android:textSize="10dp" />

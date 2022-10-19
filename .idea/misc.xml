@@ -19,11 +19,13 @@
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_admin_view_ambulance.xml" value="0.19692307692307692" />
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_details.xml" value="0.22" />
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_favourites.xml" value="0.19692307692307692" />
-        <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_main.xml" value="0.47962962962962963" />
+        <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_not_connected.xml" value="0.2" />
+        <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_not_connectivity.xml" value="0.2" />
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_update_amb_details.xml" value="0.1" />
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_update_amb_detalis.xml" value="0.2" />
-        <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_welcome_page.xml" value="0.329935125115848" />
+        <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/activity_welcome_page.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/favouriterow.xml" value="0.19692307692307692" />
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/singlerow.xml" value="0.22" />
         <entry key="..\:/Users/jorda/AndroidStudioProjects/HelpApplication/app/src/main/res/layout/updaterow.xml" value="0.2" />

@@ -23,6 +23,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
 {
 
     ProgressBar progressBar;
+
     public myadapter(@NonNull FirebaseRecyclerOptions<model> options) {
         super(options);
     }
@@ -125,10 +126,10 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
         }
     }
 
-    @Override
-    public void onDataChanged() {
-        if (progressBar != null) {
-            progressBar.setVisibility(View.GONE);
-        }
-    }
+//    @Override
+//    public void onDataChanged() {
+////            progressBar.setVisibility(View.GONE);
+//
+//        mEmptyListMessage.setVisibility(getItemCount() == 0 ? View.VISIBLE : View.GONE);
+//    }
 }

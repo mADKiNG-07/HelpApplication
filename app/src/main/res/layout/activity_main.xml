@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="@+id/add_ambulance_fab" />
 
     <LinearLayout
-        android:paddingTop="10dp"
+        android:paddingTop="30dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:layout_width="match_parent"
@@ -73,10 +73,11 @@
         <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Find Help Near You, fast!"
-            android:textSize="30dp"
+            android:text="Find An Ambulance Near You."
+            android:textSize="25dp"
             android:fontFamily="@font/urbanistbold"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_marginBottom="8dp"/>
 
         <RelativeLayout
@@ -85,6 +86,8 @@
             android:layout_gravity="center">
 
             <EditText
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:id="@+id/search_field"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -93,7 +96,6 @@
                 android:hint="Enter Location"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
-                android:paddingBottom="10dp"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 
@@ -125,4 +127,4 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

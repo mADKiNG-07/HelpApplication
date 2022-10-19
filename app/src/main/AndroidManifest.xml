@@ -4,6 +4,8 @@
     package="com.example.helpapplication">
     <!-- Permission for phone call -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelpApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".NotConnected"
+            android:exported="false" />
         <activity
             android:name=".WelcomePage"
             android:exported="false" />

@@ -220,7 +220,4 @@ public class MainActivity extends AppCompatActivity {
         recview.setAdapter(adapter);
     }
 
-
-
-
 }
