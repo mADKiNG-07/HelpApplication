@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recview, recyclerView;
     myadapter adapter;
     ProgressBar progressBar;
+    ImageButton button;
 
 
     // Make sure to use the FloatingActionButton for all the FABs
@@ -54,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().hide();
+
+        button = findViewById(R.id.back);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                finish();
+            }
+        });
 
         progressBar = findViewById(R.id.progressBarA);
 

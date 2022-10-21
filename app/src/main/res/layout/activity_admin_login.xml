@@ -6,12 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".AdminLogin">
 
+    <ImageButton
+        android:layout_margin="20dp"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="5dp"
+        />
+
     <TextView
         android:id="@+id/idTVHeader"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
         android:text="Admin Login!"
         android:textSize="30dp"
         android:fontFamily="@font/urbanistbold"
@@ -22,8 +32,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
+        android:layout_below="@+id/back"
         android:fontFamily="@font/urbanistbold"
         android:text="Admin Login!"
         android:textSize="30dp"

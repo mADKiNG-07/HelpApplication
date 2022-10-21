@@ -8,6 +8,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ public class AdminRegister extends AppCompatActivity {
     private Button register;
     private ProgressBar progressBar;
 
+    ImageButton button;
     private FirebaseAuth auth;
 
     @Override
@@ -36,6 +38,13 @@ public class AdminRegister extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+        button = findViewById(R.id.back);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                finish();
+            }
+        });
 
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);

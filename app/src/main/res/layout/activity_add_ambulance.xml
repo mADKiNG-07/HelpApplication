@@ -11,17 +11,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <!--text view for heading-->
 
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                />
+
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/urbanistbold"
                 android:text="Hello!"
                 android:textSize="30dp"

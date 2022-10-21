@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +19,8 @@ public class AddAmbulance extends AppCompatActivity {
     TextView companyName,landmark,location,personnel,phoneNumber,plateNumber,vehicleType;
     private Button addAmbulance, viewAmbulance, backToHome;
 
+    ImageButton button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +28,13 @@ public class AddAmbulance extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+        button = findViewById(R.id.back);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                finish();
+            }
+        });
 
         companyName = findViewById(R.id.ngcompanyName);
         landmark = findViewById(R.id.nglandmark);

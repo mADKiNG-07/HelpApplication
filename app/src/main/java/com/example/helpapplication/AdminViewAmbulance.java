@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
@@ -26,6 +28,7 @@ public class AdminViewAmbulance extends AppCompatActivity {
 
     EditText editText;
 
+    ImageButton button;
     ArrayList<model> arrayList;
 
     @Override
@@ -35,6 +38,13 @@ public class AdminViewAmbulance extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+        button = findViewById(R.id.back);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                finish();
+            }
+        });
 
         arrayList = new ArrayList<>();
 

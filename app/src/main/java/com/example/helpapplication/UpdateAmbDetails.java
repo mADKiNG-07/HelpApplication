@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,12 +22,23 @@ public class UpdateAmbDetails extends AppCompatActivity {
     Button button;
     DatabaseReference reference;
     TextView ngcompanyName,nglandmark,nglocation,ngpersonnel,ngphoneNumber,ngplateNumber,ngvehicleType;
+
+    ImageButton buttont;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_amb_details);
 
         getSupportActionBar().hide();
+
+        buttont = findViewById(R.id.back);
+        buttont.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                finish();
+            }
+        });
 
         String tCompanyName = getIntent().getStringExtra("companyName");
         TextView companyName = findViewById(R.id.companyName);

@@ -10,6 +10,8 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -27,6 +29,7 @@ public class AdminLogin extends AppCompatActivity {
 
     private ProgressBar progressBar2;
     private FirebaseAuth auth;
+    ImageButton button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,14 @@ public class AdminLogin extends AppCompatActivity {
         setContentView(R.layout.activity_admin_login);
 
         getSupportActionBar().hide();
+
+        button = findViewById(R.id.back);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                finish();
+            }
+        });
 
 
         auth = FirebaseAuth.getInstance();
