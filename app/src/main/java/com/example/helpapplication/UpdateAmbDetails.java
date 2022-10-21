@@ -23,7 +23,7 @@ public class UpdateAmbDetails extends AppCompatActivity {
     DatabaseReference reference;
     TextView ngcompanyName,nglandmark,nglocation,ngpersonnel,ngphoneNumber,ngplateNumber,ngvehicleType;
 
-    ImageButton buttont;
+    ImageButton buttontt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,8 @@ public class UpdateAmbDetails extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        buttont = findViewById(R.id.back);
-        buttont.setOnClickListener(new View.OnClickListener(){
+        buttontt = findViewById(R.id.back);
+        buttontt.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
                 finish();
